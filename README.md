@@ -1,7 +1,23 @@
-# Vue 3 + Vite
+<h1 align="center">Pokedex</h1>
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+<div>
+<img src="https://i.postimg.cc/FK6XXzJN/capa-pokedex.png"/>
+</div>
 
-## Recommended IDE Setup
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Technologies
+<div align="left">
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968358.png" width="80px" height="80px"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png" width="80px" height="80px"/>
+<img src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png" width="150px" height="80px" />
+</div>
+
+## Deploy 
+
+https://pokedex-df822.web.app/
+
+## How to run the project (locally)
+Fork or download the project and run the following command in your directory:
+### `npm start`
+After that, the project will be running on your local machine:
+Open in your browser [http://localhost:3000](http://localhost:3000).
