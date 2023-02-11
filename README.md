@@ -10,6 +10,7 @@
 <img src="https://cdn-icons-png.flaticon.com/512/5968/5968358.png" width="80px" height="80px"/>
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png" width="80px" height="80px"/>
 <img src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png" width="150px" height="80px" />
+<img src="https://vitejs.dev/logo-with-shadow.png" width="80px" height="80px"/>
 </div>
 
 ## Deploy 
