@@ -16,6 +16,7 @@ export default {
             pokemons: [],
             filteredPokemons: [],
             search: '',
+            showClearButton: false,
         }
     },
     created: function () {
@@ -33,14 +34,23 @@ export default {
         searchPokemons: function () {
             this.filteredPokemons = this.pokemons;
             if (this.search.trim().toLowerCase() === '') {
+                this.showClearButton = false;
                 this.filteredPokemons = this.pokemons;
             } else {
                 this.filteredPokemons = this.pokemons.filter((pokemon) => pokemon.name.toLowerCase().includes(this.search.trim().toLowerCase()));
+                this.showClearButton = true;
             }
         },
+        clearSearch: function () {
+            this.search = '';
+            this.filteredPokemons = this.pokemons;
+            this.searchPokemons();
+        }
     }
 }
 </script>
+
+
 
 <style lang="scss" src="./style.scss" scoped/>
 
@@ -48,6 +58,10 @@ export default {
     <img src="../../assets/pokemon-logo.png" alt="Pokemon Logo" class="pokemon-logo">
 
     <SearchBarComponent v-model="search" @update:modelValue="search = $event" />
+
+    <button v-if="showClearButton" class="clear-button" @click="clearSearch">
+        <font-awesome-icon class="icon-button" icon="fa-solid fa-refresh" />
+        Refresh</button>
     <button class=" search-button" @click=searchPokemons>
         <font-awesome-icon class="icon-button" icon="fa-solid fa-magnifying-glass" />
         Buscar
