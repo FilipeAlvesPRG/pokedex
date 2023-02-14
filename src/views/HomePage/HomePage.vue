@@ -32,19 +32,15 @@ export default {
     methods: {
         searchPokemons: function () {
             this.filteredPokemons = this.pokemons;
-            if (this.search == '' || this.search == ' ') {
+            if (this.search.trim().toLowerCase() === '') {
                 this.filteredPokemons = this.pokemons;
             } else {
-                this.filteredPokemons = this.pokemons.filter((pokemon) => pokemon.name == this.search);
+                this.filteredPokemons = this.pokemons.filter((pokemon) => pokemon.name.toLowerCase().includes(this.search.trim().toLowerCase()));
             }
         },
     }
 }
 </script>
-
-
-
-
 
 <style lang="scss" src="./style.scss" scoped/>
 
